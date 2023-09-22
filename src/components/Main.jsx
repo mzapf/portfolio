@@ -1,5 +1,15 @@
+import { Footer } from "./Footer"
+import { NavBar } from "./NavBar"
+import { Pages } from "./Pages"
+
 const Main = () => {
-    return <></>
+    return (
+        <>
+            <NavBar />
+            <Pages />
+            <Footer />
+        </>
+    )
 }
 
 export { Main }
