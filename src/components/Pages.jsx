@@ -1,5 +1,11 @@
+import { Hello } from "./Hello"
+
 const Pages = () => {
-    return <></>
+    return (
+        <>
+            <Hello />
+        </>
+    )
 }
 
 export { Pages }
