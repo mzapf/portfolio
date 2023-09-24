@@ -6,7 +6,7 @@ const Pages = () => {
     return (
         <>
             <NavBar />
-            <main className="p-20">
+            <main className="px-52 py-36">
                 <Outlet />
             </main>
             <Footer />

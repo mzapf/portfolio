@@ -8,7 +8,7 @@ const NavBar = () => {
         return `flex ${
             location.pathname === path
                 ? "text-amber-400 border-t-2 border-red-400 bg-custom-gray"
-                : ""
+                : "border-y-2 border-gray-800"
         }`
     }
 
@@ -49,8 +49,11 @@ const NavBar = () => {
     )
 
     return (
-        <header className="border-2 border-gray-800">
-            <nav className="flex bg-black">{sections.map(renderLink)}</nav>
+        <header>
+            <nav className="flex bg-black">
+                {sections.map(renderLink)}
+                <div className="grow border-y-2 border-gray-800" />
+            </nav>
         </header>
     )
 }

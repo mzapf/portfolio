@@ -2,12 +2,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 const links = [
     {
-        href: "https://github.com/mzapf",
-        logo: <FaGithub />,
-    },
-    {
         href: "https://www.linkedin.com/in/zapf",
         logo: <FaLinkedin />,
+    },
+    {
+        href: "https://github.com/mzapf",
+        logo: <FaGithub />,
     },
 ]
 
