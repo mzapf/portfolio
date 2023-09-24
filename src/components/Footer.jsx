@@ -13,15 +13,15 @@ const links = [
 
 const Footer = () => {
     return (
-        <footer className="flex absolute bottom-0 gap-2 items-center">
-            <p>find me in:</p>
+        <footer className="flex absolute bottom-0">
+            <p className="border-2 border-gray-800">find me in:</p>
             {links.map((link, index) => (
                 <a
                     key={index}
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-sky-300"
+                    className="flex items-center hover:text-amber-400 border-2 border-gray-800"
                 >
                     {link.logo}
                 </a>
