@@ -6,8 +6,10 @@ const Pages = () => {
     return (
         <>
             <NavBar />
-            <main className="px-52 py-36">
-                <Outlet />
+            <main>
+                <div className="h-[90vh] flex items-center justify-evenly">
+                    <Outlet />
+                </div>
             </main>
             <Footer />
         </>
