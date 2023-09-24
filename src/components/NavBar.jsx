@@ -1,28 +1,9 @@
-import React, { useMemo } from "react"
+import { useMemo } from "react"
 import { Link, useLocation } from "react-router-dom"
 
-const sections = [
-    {
-        name: "hello",
-        path: "/",
-    },
-    {
-        name: "about",
-        path: "/about",
-    },
-    {
-        name: "projects",
-        path: "/projects",
-    },
-    {
-        name: "contact",
-        path: "/contact",
-    },
-]
-
-const NavBar = React.memo(() => {
+const NavBar = () => {
     const location = useLocation()
-    const getLinkClass = (path) => {
+    const showCurrent = (path) => {
         return `flex ${location.pathname === path ? "text-red-500" : ""}`
     }
     const renderLink = (section) => {
@@ -30,18 +11,40 @@ const NavBar = React.memo(() => {
             <Link
                 key={section.name}
                 to={section.path}
-                className={getLinkClass(section.path)}
+                className={showCurrent(section.path)}
             >
                 <button className="px-10 text-2xl">_{section.name}</button>
             </Link>
         )
     }
 
+    const sections = useMemo(
+        () => [
+            {
+                name: "hello",
+                path: "/",
+            },
+            {
+                name: "about",
+                path: "/about",
+            },
+            {
+                name: "projects",
+                path: "/projects",
+            },
+            {
+                name: "contact",
+                path: "/contact",
+            },
+        ],
+        []
+    )
+
     return (
         <header>
             <nav className="flex">{sections.map(renderLink)}</nav>
         </header>
     )
-})
+}
 
 export { NavBar }
