@@ -1,9 +1,13 @@
-import { Main } from "./components/Main"
+import { Footer } from "./components/Footer"
+import { NavBar } from "./components/NavBar"
+import { Pages } from "./components/Pages"
 
 function App() {
     return (
         <>
-            <Main />
+            <NavBar />
+            <Pages />
+            <Footer />
         </>
     )
 }

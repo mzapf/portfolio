@@ -1,7 +1,12 @@
 const NavBar = () => {
     return (
         <>
-            <h2 className="text-center">NavBar</h2>
+            <header className="flex">
+                <button className="px-10">_hello</button>
+                <button className="px-10">_about me</button>
+                <button className="px-10">_projects</button>
+                <button className="px-10">_contact me</button>
+            </header>
         </>
     )
 }
