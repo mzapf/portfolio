@@ -9,6 +9,10 @@ export default {
       fontFamily: {
         Inconsolata: ["Inconsolata", "monospace"],
       },
+      colors: {
+        'custom-gray': '#0d1117',
+      },
+
     },
   },
   plugins: [],

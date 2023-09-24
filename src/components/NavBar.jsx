@@ -7,8 +7,8 @@ const NavBar = () => {
     const showCurrent = (path) => {
         return `flex ${
             location.pathname === path
-                ? "text-amber-400 border-t-2 border-red-400 bg-transparent"
-                : "border-y-2 border-gray-800 bg-black"
+                ? "text-amber-400 border-t-2 border-red-400 bg-custom-gray"
+                : ""
         }`
     }
 
@@ -33,7 +33,7 @@ const NavBar = () => {
                 path: "/",
             },
             {
-                name: "about",
+                name: "about me",
                 path: "/about",
             },
             {
@@ -49,10 +49,8 @@ const NavBar = () => {
     )
 
     return (
-        <header className="">
-            <nav className="flex border-r-2 border-gray-800">
-                {sections.map(renderLink)}
-            </nav>
+        <header className="border-2 border-gray-800">
+            <nav className="flex bg-black">{sections.map(renderLink)}</nav>
         </header>
     )
 }
