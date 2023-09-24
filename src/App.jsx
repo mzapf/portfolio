@@ -1,13 +1,38 @@
-import { Footer } from "./components/Footer"
-import { NavBar } from "./components/NavBar"
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import { About } from "./components/About"
+import { Contact } from "./components/Contact"
+import { Hello } from "./components/Hello"
+import { Projects } from "./components/Projects"
 import { Pages } from "./components/Pages"
+
+const router = createBrowserRouter([
+    {
+        element: <Pages />,
+        children: [
+            {
+                path: "/",
+                element: <Hello />,
+            },
+            {
+                path: "/about",
+                element: <About />,
+            },
+            {
+                path: "/projects",
+                element: <Projects />,
+            },
+            {
+                path: "/contact",
+                element: <Contact />,
+            },
+        ],
+    },
+])
 
 function App() {
     return (
         <>
-            <NavBar />
-            <Pages />
-            <Footer />
+            <RouterProvider router={router} />
         </>
     )
 }

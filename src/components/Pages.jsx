@@ -1,15 +1,15 @@
-import { AboutMe } from "./AboutMe"
-import { Contact } from "./Contact"
-import { Hello } from "./Hello"
-import { Projects } from "./Projects"
+import { Outlet } from "react-router-dom"
+import { NavBar } from "./NavBar"
+import { Footer } from "./Footer"
 
 const Pages = () => {
     return (
         <>
-            <AboutMe />
-            <Contact />
-            <Hello />
-            <Projects />
+            <NavBar />
+            <main className="p-20">
+                <Outlet />
+            </main>
+            <Footer />
         </>
     )
 }

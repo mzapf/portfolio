@@ -13,7 +13,8 @@ const links = [
 
 const Footer = () => {
     return (
-        <footer className="flex">
+        <footer className="flex absolute bottom-0 gap-2 items-center">
+            <p>find me in:</p>
             {links.map((link, index) => (
                 <a
                     key={index}
