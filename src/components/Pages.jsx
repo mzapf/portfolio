@@ -7,9 +7,7 @@ const Pages = () => {
         <>
             <NavBar />
             <main>
-                <div className="h-[90vh] flex items-center justify-evenly">
-                    <Outlet />
-                </div>
+                <Outlet />
             </main>
             <Footer />
         </>
