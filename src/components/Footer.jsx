@@ -17,35 +17,31 @@ const Footer = () => {
 
     useEffect(() => {
         const now = new Date()
-        const fecha = now.getDate()
-        const mes = now.getMonth() + 1
-        const año = now.getFullYear()
-        const hora = now.getHours()
-        const minuto = now.getMinutes()
+        const date = now.getDate()
+        const month = now.getMonth() + 1
+        const year = now.getFullYear()
+        const hour = String(now.getHours()).padStart(2, "0")
+        const minute = String(now.getMinutes()).padStart(2, "0")
 
-        setFechaHora(`${hora}:${minuto} ${fecha}/${mes}/${año}`)
+        setFechaHora(`${hour}:${minute} ${date}/${month}/${year}`)
     }, [])
 
     return (
-        <footer>
-            <div className="w-full flex items-center absolute bottom-0 border-2 border-gray-800">
-                <p className="flex p-2 border-r-2 border-gray-800">
-                    find me in:
-                </p>
-                {links.map((link, index) => (
-                    <a
-                        key={index}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-amber-400 text-2xl p-2 border-r-2 border-gray-800"
-                    >
-                        {link.logo}
-                    </a>
-                ))}
-                <p className="flex grow justify-end pr-2">{fechaHora}</p>
-            </div>
-        </footer>
+        <div className="w-full flex items-center absolute bottom-0 border-2 border-gray-800">
+            <p className="flex p-2 border-r-2 border-gray-800">find me in:</p>
+            {links.map((link, index) => (
+                <a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-amber-400 text-2xl p-2 border-r-2 border-gray-800"
+                >
+                    {link.logo}
+                </a>
+            ))}
+            <p className="flex grow justify-end pr-3">{fechaHora}</p>
+        </div>
     )
 }
 
