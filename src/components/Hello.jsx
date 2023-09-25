@@ -14,8 +14,12 @@ const Hello = () => {
                     </div>
                     <div>
                         <p>// write the code below to continue:</p>
-                        <h4 className="text-4xl text-purple-300">
-                            {">"} whois
+                        <h4 className="text-4xl text-custom-purple">
+                            <span className="text-purple-300">{"> "}</span>
+                            <span className="border-b-2 border-purple-300">
+                                w
+                            </span>
+                            hois
                         </h4>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ const ProjectCard = () => {
                         href="https://github.com/mzapf/c-137"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-amber-400 text-custom-gray-2"
+                        className="bg-custom-gold text-custom-gray-2 hover:bg-amber-400"
                     >
                         <button className="px-4">see the project</button>
                     </a>

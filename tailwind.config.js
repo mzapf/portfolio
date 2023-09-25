@@ -12,6 +12,8 @@ export default {
       colors: {
         'custom-gray': '#0d1117',
         'custom-gray-2': '#0a0d12',
+        'custom-purple': '#675a72',
+        'custom-gold': '#8a6e35',
       },
 
     },
