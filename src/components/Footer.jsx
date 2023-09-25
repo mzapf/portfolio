@@ -13,7 +13,7 @@ const links = [
 ]
 
 const Footer = () => {
-    const [fechaHora, setFechaHora] = useState("")
+    const [dateHour, setDateHour] = useState("")
 
     useEffect(() => {
         const now = new Date()
@@ -23,7 +23,7 @@ const Footer = () => {
         const hour = String(now.getHours()).padStart(2, "0")
         const minute = String(now.getMinutes()).padStart(2, "0")
 
-        setFechaHora(`${hour}:${minute} ${date}/${month}/${year}`)
+        setDateHour(`${hour}:${minute} ${date}/${month}/${year}`)
     }, [])
 
     return (
@@ -40,7 +40,7 @@ const Footer = () => {
                     {link.logo}
                 </a>
             ))}
-            <p className="flex grow justify-end pr-3">{fechaHora}</p>
+            <p className="flex grow justify-end pr-3">{dateHour}</p>
         </div>
     )
 }

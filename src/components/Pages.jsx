@@ -5,11 +5,15 @@ import { Footer } from "./Footer"
 const Pages = () => {
     return (
         <>
-            <NavBar />
+            <header>
+                <NavBar />
+            </header>
             <main>
                 <Outlet />
             </main>
-            <Footer />
+            <footer>
+                <Footer />
+            </footer>
         </>
     )
 }

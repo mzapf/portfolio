@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         'custom-gray': '#0d1117',
+        'custom-gray-2': '#0a0d12',
       },
 
     },

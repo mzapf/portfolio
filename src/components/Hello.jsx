@@ -1,3 +1,5 @@
+import { ProjectCard } from "./ProjectCard"
+
 const Hello = () => {
     return (
         <>
@@ -18,7 +20,7 @@ const Hello = () => {
                     </div>
                 </div>
                 <div>
-                    <p>Projects Showcase</p>
+                    <ProjectCard />
                 </div>
             </div>
         </>

@@ -1,7 +1,9 @@
+import { ProjectCard } from "./ProjectCard"
+
 const Projects = () => {
     return (
         <>
-            <p>Projects...</p>
+            <ProjectCard />
         </>
     )
 }
