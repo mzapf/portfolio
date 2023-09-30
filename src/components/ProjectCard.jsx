@@ -1,14 +1,23 @@
-const ProjectCard = () => {
+const ProjectCard = (props) => {
+    const { title, commits, url, content } = props.project
+
+    const commented_content = `/**
+  * ${content.join("\n  * ")}
+  */`
+
     return (
         <>
-            <div className="w-96 border-2 border-gray-800 rounded-xl p-4 shadow-xl shadow-gray-800">
-                <p className="text-amber-400 pb-4 font-bold">Dimensión C-137</p>
+            <div className="w-96 border-2 border-gray-800 rounded-xl p-4 shadow-lg shadow- shadow-gray-800">
+                <div className="flex justify-between">
+                    <p className="text-amber-400 pb-4 font-bold">{title}</p>
+                    <p className="text-gray-700 pb-4">{commits} commits</p>
+                </div>
                 <div className="flex flex-col gap-4 bg-custom-gray-2 border-2 border-black rounded-xl py-4">
-                    <p className="px-4">
-                        Proyecto del Bootcamp Front-End (Silicon Misiones - UTN)
-                    </p>
+                    <pre className="flex text-gray-400 justify-start pl-4">
+                        {commented_content}
+                    </pre>
                     <a
-                        href="https://github.com/mzapf/c-137"
+                        href={url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-custom-gold text-custom-gray-2 hover:bg-amber-400"

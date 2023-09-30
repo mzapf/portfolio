@@ -1,9 +1,12 @@
 import { ProjectCard } from "./ProjectCard"
+import projectsData from "../projects.json"
+
+const Project1 = projectsData[0]
 
 const Hello = () => {
     return (
         <>
-            <div className="h-[90vh] flex items-center justify-evenly">
+            <div className="h-[85vh] flex items-center justify-evenly">
                 <div className="flex flex-col gap-20">
                     <div>
                         <h2 className="text-2xl">Hello! I am</h2>
@@ -24,7 +27,7 @@ const Hello = () => {
                     </div>
                 </div>
                 <div>
-                    <ProjectCard />
+                    <ProjectCard project={Project1} />
                 </div>
             </div>
         </>
