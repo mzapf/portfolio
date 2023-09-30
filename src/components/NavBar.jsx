@@ -49,7 +49,7 @@ const NavBar = () => {
     )
 
     return (
-        <nav className="flex bg-black">
+        <nav className="flex overflow-x-auto bg-black">
             {sections.map(renderLink)}
             <div className="grow border-y-2 border-gray-800" />
         </nav>
