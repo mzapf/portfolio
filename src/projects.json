@@ -5,15 +5,27 @@
         "url": "https://github.com/mzapf/c-137",
         "content": [
             "Front-End Bootcamp Project",
-            "Silicon Misiones - UTN"
+            "Silicon Misiones - UTN",
+            "Stack: HTML, CSS and JS"
         ]
     },
     {
-        "title": "hola-git",
+        "title": "Portfolio",
+        "commits": 45,
+        "url": "https://github.com/mzapf/portfolio",
+        "content": [
+            "Back-End Bootcamp Project",
+            "Silicon Misiones - UTN",
+            "Stack: React.js, Tailwind CSS"
+        ]
+    },
+    {
+        "title": "Hola Git",
         "commits": 11,
         "url": "https://github.com/mzapf/hola-git",
         "content": [
-            "Git y GitHub Content"
+            "Git y GitHub Content",
+            "Stack: HTML and CSS"
         ]
     }
 ]
