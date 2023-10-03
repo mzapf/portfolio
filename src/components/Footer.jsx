@@ -27,7 +27,7 @@ const Footer = () => {
     }, [])
 
     return (
-        <div className="w-full flex items-center absolute bottom-0 border-2 border-gray-800">
+        <div className="hidden md:flex w-full items-center absolute left-0 md:bottom-0 border-2 border-gray-800">
             <p className="flex p-2 border-r-2 border-gray-800">find me in:</p>
             {links.map((link, index) => (
                 <a

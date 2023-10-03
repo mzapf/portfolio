@@ -74,7 +74,7 @@ const Contact = () => {
                         <input
                             type="submit"
                             value="Send"
-                            className="mt-2 py-2 rounded bg-custom-gold text-custom-gray-2 hover:bg-amber-400"
+                            className="mt-2 py-2 text-lg rounded bg-custom-gold text-custom-gray-2 hover:bg-amber-400"
                         />
                     </form>
                 </div>

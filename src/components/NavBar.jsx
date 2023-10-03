@@ -33,7 +33,7 @@ const NavBar = () => {
                 path: "/",
             },
             {
-                name: "about me",
+                name: "about",
                 path: "/about",
             },
             {
