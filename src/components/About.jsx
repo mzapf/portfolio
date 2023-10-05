@@ -5,7 +5,8 @@ const About = () => {
         "About me",
         "Learning to develop modern web applications that involve data analytics.",
         "I'm currently learning React, Node.js, and MongoDB.",
-        "I'm looking to collaborate on projects that involve data analytics.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Similique assumenda quis accusantium, vero labore dolore?",
     ]
 
     const commented_content = `/**
@@ -13,7 +14,7 @@ const About = () => {
   */`
 
     return (
-        <div className="p-4">
+        <div className="flex justify-center items-center md:h-[85vh] p-4">
             <CodeEditor content={commented_content} />
         </div>
     )
