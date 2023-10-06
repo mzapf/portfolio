@@ -6,14 +6,14 @@ https://www.behance.net/gallery/132027861/Portfolio-Concept
 
 ## Tecnologías utilizadas
 
-- React.js
-- Tailwind CSS
-- Framer Motion
-- emailJS
+- [React.js](https://vercel.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [EmailJS](https://www.emailjs.com/)
 
 ## Deploy
 
-El proyecto está desplegado y alojado en Vercel. Puedes visitar la versión en vivo a través del siguiente enlace:
+El proyecto está desplegado y alojado en [Vercel](https://vercel.com/). Puedes visitar la versión en vivo a través del siguiente enlace:
 
 https://portfolio-zapf.vercel.app/
 
@@ -23,4 +23,4 @@ Este es un proyecto educativo y no está abierto a contribuciones. Sin embargo, 
 
 - - -
 
-¡Gracias por visitar mi trabajo! Si quieres conocer más sobre mí o mis proyectos, no dudes en seguirme aquí en GitHub o contactarme a través de LinkedIn o el formulario en el portfolio.
+¡Gracias por visitar mi trabajo! Si quieres conocer más sobre mí o mis proyectos, no dudes en seguirme aquí en GitHub o contactarme a través de [LinkedIn](https://www.linkedin.com/in/zapf) o el [formulario](https://portfolio-zapf.vercel.app/contact) del portfolio.
