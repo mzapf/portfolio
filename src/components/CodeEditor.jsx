@@ -16,7 +16,7 @@ const CodeEditor = ({ content }) => {
     ))
 
     return (
-        <div className="p-2 text-gray-500 relative overflow-x-scroll">
+        <div className="p-2 text-gray-500 relative">
             <div className="absolute top-0 left-0 p-2 z-10">{lineNumbers}</div>
             <div className="pl-8 whitespace-pre-wrap relative z-10">
                 {blankLines}
@@ -25,7 +25,6 @@ const CodeEditor = ({ content }) => {
                 ))}
                 {blankLines}
             </div>
-
             <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-custom-gray to-transparent pointer-events-none z-20"></div>
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-custom-gray to-transparent pointer-events-none z-20"></div>
         </div>
