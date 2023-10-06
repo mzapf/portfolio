@@ -1,7 +1,7 @@
 const CodeEditor = ({ content }) => {
     const lines = content.split("\n")
 
-    const extraLines = 3
+    const extraLines = 2
     const totalLineCount = lines.length + 2 * extraLines
     const startLineNumber = 35
 

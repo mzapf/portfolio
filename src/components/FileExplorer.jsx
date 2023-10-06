@@ -9,7 +9,7 @@ import js_icon from "../assets/icons/js.svg"
 const FileExplorer = () => {
     const items = [
         {
-            name: "index.jsx",
+            name: "hello.jsx",
             path: "/",
             icon: `${react_icon}`,
         },
@@ -31,28 +31,31 @@ const FileExplorer = () => {
     ]
 
     return (
-        <div>
-            {items.map((item) => (
-                <Link
-                    to={`${item.path}`}
-                    key={item.name}
-                    className={`flex gap-x-1 ${
-                        item.path === "/about"
-                            ? "bg-gray-800"
-                            : "bg-transparent"
-                    }`}
-                >
-                    <img
-                        src={item.icon}
-                        alt={item.name}
-                        height={20}
-                        width={20}
-                    />
-                    <p className="text-lg font-medium text-gray-500 hover:text-amber-400">
-                        {item.name}
-                    </p>
-                </Link>
-            ))}
+        <div className="hidden md:flex flex-col gap-4 border border-gray-800 rounded-lg p-4">
+            <p className="text-lg font-bold">File Explorer</p>
+            <div>
+                {items.map((item) => (
+                    <Link
+                        to={`${item.path}`}
+                        key={item.name}
+                        className={`flex gap-x-1 ${
+                            item.path === "/about"
+                                ? "bg-gray-800 text-white"
+                                : "bg-transparent text-gray-500"
+                        }`}
+                    >
+                        <img
+                            src={item.icon}
+                            alt={item.name}
+                            height={20}
+                            width={20}
+                        />
+                        <p className="text-lg font-medium hover:text-white">
+                            {item.name}
+                        </p>
+                    </Link>
+                ))}
+            </div>
         </div>
     )
 }
