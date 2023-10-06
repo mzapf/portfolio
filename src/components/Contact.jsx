@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
+import { Transition } from "./Transition"
 
 const Contact = () => {
     const form = useRef()
@@ -83,11 +84,7 @@ const Contact = () => {
     }
 
     return (
-        <>
-            <div className="h-[85vh] flex items-center justify-evenly">
-                {showThankYou ? <ThankYou /> : <ContactForm />}
-            </div>
-        </>
+        <Transition>{showThankYou ? <ThankYou /> : <ContactForm />}</Transition>
     )
 }
 

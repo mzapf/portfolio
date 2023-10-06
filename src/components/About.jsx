@@ -1,3 +1,4 @@
+import { Transition } from "./Transition"
 import { CodeEditor } from "./CodeEditor"
 import { FileExplorer } from "./FileExplorer"
 
@@ -12,10 +13,12 @@ const About = () => {
     const commented_content = `/**\n  * ${content.join("\n  * ")}\n  */`
 
     return (
-        <div className="flex gap-20 items-center">
-            <CodeEditor content={commented_content} />
-            <FileExplorer />
-        </div>
+        <Transition>
+            <div className="flex gap-20 items-center">
+                <CodeEditor content={commented_content} />
+                <FileExplorer />
+            </div>
+        </Transition>
     )
 }
 

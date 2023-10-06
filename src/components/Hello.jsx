@@ -1,3 +1,4 @@
+import { Transition } from "./Transition"
 import { ProjectCard } from "./ProjectCard"
 import projectsData from "../data/projects.json"
 
@@ -5,7 +6,7 @@ const Project1 = projectsData[0]
 
 const Hello = () => {
     return (
-        <>
+        <Transition>
             <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
                 <div className="flex flex-col gap-5 md:gap-20">
                     <div>
@@ -34,7 +35,7 @@ const Hello = () => {
                     <ProjectCard project={Project1} />
                 </div>
             </div>
-        </>
+        </Transition>
     )
 }
 
