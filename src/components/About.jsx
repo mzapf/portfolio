@@ -9,12 +9,10 @@ const About = () => {
         "Similique assumenda quis accusantium, vero labore dolore?",
     ]
 
-    const commented_content = `/**
-  * ${content.join("\n  * ")}
-  */`
+    const commented_content = `/**\n  * ${content.join("\n  * ")}\n  */`
 
     return (
-        <div className="flex justify-center items-center md:h-[85vh] p-4">
+        <div>
             <CodeEditor content={commented_content} />
         </div>
     )

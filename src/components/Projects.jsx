@@ -4,7 +4,7 @@ import projectsData from "../projects.json"
 const Projects = () => {
     return (
         <>
-            <div className="md:h-[85vh] flex flex-col md:flex-row gap-6 items-center justify-evenly p-4">
+            <div className="flex flex-col lg:flex-row gap-10 items-center justify-evenly">
                 {projectsData.map((project, index) => (
                     <ProjectCard key={index} project={project} />
                 ))}

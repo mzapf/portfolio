@@ -1,13 +1,11 @@
 const ProjectCard = (props) => {
     const { title, commits, url, content } = props.project
 
-    const commented_content = `/**
-  * ${content.join("\n  * ")}
-  */`
+    const commented_content = `/**\n  * ${content.join("\n  * ")}\n  */`
 
     return (
         <>
-            <div className="border-2 border-gray-800 rounded-xl p-4 shadow-lg shadow- shadow-gray-800">
+            <div className="border-2 border-gray-800 rounded-xl p-4 shadow-lg shadow-gray-800">
                 <div className="flex justify-between">
                     <p className="text-amber-400 pb-4 font-bold">{title}</p>
                     <p className="text-gray-700 pb-4">{commits} commits</p>

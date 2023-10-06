@@ -8,6 +8,7 @@ import { Pages } from "./components/Pages"
 const router = createBrowserRouter([
     {
         element: <Pages />,
+        errorElement: <Pages />,
         children: [
             {
                 path: "/",
@@ -30,11 +31,7 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-    return (
-        <>
-            <RouterProvider router={router} />
-        </>
-    )
+    return <RouterProvider router={router} />
 }
 
 export default App
