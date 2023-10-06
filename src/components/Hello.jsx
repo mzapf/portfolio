@@ -1,13 +1,13 @@
 import { ProjectCard } from "./ProjectCard"
-import projectsData from "../projects.json"
+import projectsData from "../data/projects.json"
 
 const Project1 = projectsData[0]
 
 const Hello = () => {
     return (
         <>
-            <div className="flex flex-col md:flex-row items-center gap-20">
-                <div className="flex flex-col gap-20">
+            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
+                <div className="flex flex-col gap-5 md:gap-20">
                     <div>
                         <h2 className="text-lg md:text-xl lg:text-2xl">
                             Hello! I am

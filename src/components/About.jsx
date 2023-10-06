@@ -5,6 +5,7 @@ const About = () => {
         "About me",
         "Learning to develop modern web applications that involve data analytics.",
         "I'm currently learning React, Node.js, and MongoDB.",
+        "",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "Similique assumenda quis accusantium, vero labore dolore?",
     ]
